@@ -1,0 +1,24 @@
+post:
+  summary: Login and get a JWT token
+  description: Authenticate user and return a JWT token for subsequent requests.
+  operationId: loginUser
+  security: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../schemas/v1/login.yaml
+  responses:
+    '200':
+      description: Login successful, returns JWT token
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              token:
+                type: string
+                example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+    '401':
+      description: Invalid credentials

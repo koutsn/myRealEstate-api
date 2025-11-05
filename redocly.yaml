@@ -1,7 +1,7 @@
 # See https://redocly.com/docs/cli/configuration/ for more information.
 apis:
   sample@v1:
-    root: ./src/main/resources/realEstate.yaml
+    root: ./src/main/resources/myRealEstate.yaml
 extends:
   - recommended
 rules:
