@@ -2,7 +2,7 @@ post:
   summary: Login and get a JWT token
   description: Authenticate user and return a JWT token for subsequent requests.
   operationId: loginUser
-  security: []
+  security: [ ]
   requestBody:
     required: true
     content:

@@ -1,0 +1,17 @@
+post:
+  summary: Register a new user
+  description: Register a new user with the provided details.
+  operationId: registerUser
+  security:
+    - bearerAuth: [ ]
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../schemas/v1/user.yaml
+  responses:
+    '200':
+      description: User registered successfully
+    '401':
+      description: Invalid credentials

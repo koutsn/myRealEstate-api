@@ -1,0 +1,44 @@
+type: object
+required:
+  - username
+  - password
+  - email
+  - firstName
+  - lastName
+  - email
+  - roless
+  - status
+properties:
+  username:
+    type: string
+    example: user123
+    minLength: 3
+    maxLength: 50
+  password:
+    type: string
+    example: mypassword
+    minLength: 8
+    maxLength: 255
+  email:
+    type: string
+    format: email
+    example: mail@yahoo.com
+    pattern: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+  firstName:
+    type: string
+    example: John
+    minLength: 3
+    maxLength: 50
+  lastName:
+    type: string
+    example: Doe
+    minLength: 3
+    maxLength: 100
+  roless:
+    type: array
+    items:
+      type: string
+    example: [ "user", "admin" ]
+  status:
+    type: string
+    enum: [ active, inactive ]

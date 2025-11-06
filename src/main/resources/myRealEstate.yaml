@@ -11,7 +11,10 @@ servers:
     description: Local server
 paths:
   /login:
+
     $ref: ./paths/v1/login.yaml
+  /register:
+    $ref: ./paths/v1/register.yaml
 components:
   securitySchemes:
     bearerAuth:
