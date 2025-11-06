@@ -38,7 +38,7 @@ properties:
     type: array
     items:
       type: string
-    example: [ "user", "admin" ]
+    example: [ "USER", "ADMIN" ]
   status:
     type: string
-    enum: [ active, inactive ]
+    enum: [ ACTIVE, INACTIVE ]
