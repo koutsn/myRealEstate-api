@@ -1,0 +1,10 @@
+type: object
+properties:
+  status:
+    type: integer
+    description: The HTTP status code
+    example: 400
+  error:
+    type: string
+    description: A brief description of the error
+    example: bad request

@@ -22,6 +22,10 @@ post:
                 example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
     '400':
       description: Bad request
+      content:
+        application/json:
+            schema:
+              $ref: ../../schemas/v1/error.yaml
     '401':
       description: Unauthorized
     '403':
