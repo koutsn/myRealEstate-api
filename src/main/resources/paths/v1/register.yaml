@@ -13,5 +13,9 @@ post:
   responses:
     '200':
       description: User registered successfully
+    '400':
+      description: Bad request
     '401':
-      description: Invalid credentials
+      description: Unauthorized
+    '403':
+      description: Forbidden

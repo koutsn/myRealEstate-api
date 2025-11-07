@@ -20,5 +20,9 @@ post:
               token:
                 type: string
                 example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+    '400':
+      description: Bad request
     '401':
-      description: Invalid credentials
+      description: Unauthorized
+    '403':
+      description: Forbidden
