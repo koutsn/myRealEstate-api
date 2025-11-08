@@ -34,7 +34,7 @@ properties:
     example: Doe
     minLength: 3
     maxLength: 100
-  roles:
+  role:
     type: string
     example: [ "USER", "ADMIN" ]
   status:
