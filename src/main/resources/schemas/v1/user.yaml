@@ -34,11 +34,9 @@ properties:
     example: Doe
     minLength: 3
     maxLength: 100
-  roless:
-    type: array
-    items:
-      type: string
+  roles:
+    type: string
     example: [ "USER", "ADMIN" ]
   status:
     type: string
-    enum: [ ACTIVE, INACTIVE ]
+    enum: [ "ACTIVE", "INACTIVE" ]
