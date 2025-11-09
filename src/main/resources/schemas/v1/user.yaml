@@ -5,8 +5,7 @@ required:
   - email
   - firstName
   - lastName
-  - email
-  - roless
+  - role
   - status
 properties:
   username:
