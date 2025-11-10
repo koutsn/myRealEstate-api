@@ -11,7 +11,7 @@ post:
         schema:
           $ref: ../../schemas/v1/user.yaml
   responses:
-    '200':
+    '201':
       description: User registered successfully
     '400':
       description: Bad request
