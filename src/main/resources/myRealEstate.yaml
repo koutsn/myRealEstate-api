@@ -15,6 +15,12 @@ paths:
     $ref: ./paths/v1/login.yaml
   /register:
     $ref: ./paths/v1/register.yaml
+  /delete{username}:
+    $ref: ./paths/v1/deleteUser.yaml
+  /user/{username}:
+    $ref: ./paths/v1/getUser.yaml
+  /users:
+    $ref: ./paths/v1/getAllUsers.yaml
 components:
   securitySchemes:
     bearerAuth:

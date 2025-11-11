@@ -1,0 +1,30 @@
+get:
+  summary: Get users by username
+  description: Get all users by username
+  operationId: getUser
+  security:
+    - bearerAuth: [ ]
+  parameters:
+    - name: username
+      in: path
+      required: true
+      description: The username of the user to fetch
+      schema:
+        type: string
+  responses:
+    '200':
+      description: List of users
+      content:
+        application/json:
+          schema:
+            $ref: ../../schemas/v1/user.yaml
+    '400':
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: ../../schemas/v1/error.yaml
+    '401':
+      description: Unauthorized
+    '403':
+      description: Forbidden
