@@ -11,7 +11,7 @@ servers:
     description: Local server
 paths:
   /login:
-Yaml Structure    $ref: ./paths/user/v1/login.yaml
+    $ref: ./paths/user/v1/login.yaml
   /register:
     $ref: ./paths/user/v1/register.yaml
   /delete{username}:
