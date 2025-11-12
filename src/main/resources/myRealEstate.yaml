@@ -14,14 +14,14 @@ paths:
     $ref: ./paths/user/v1/login.yaml
   /register:
     $ref: ./paths/user/v1/register.yaml
-  /delete{username}:
-    $ref: ./paths/user/v1/deleteUser.yaml
   /user/{username}:
     $ref: ./paths/user/v1/userByUsername.yaml
   /users:
     $ref: ./paths/user/v1/users.yaml
   /objects:
     $ref: ./paths/object/v1/objects.yaml
+  /object/{id}:
+    $ref: ./paths/object/v1/objectById.yaml
 components:
   securitySchemes:
     bearerAuth:

@@ -9,7 +9,7 @@ properties:
     example: This is a sample object used for demonstration purposes.
     maxLength: 500
   address:
-    $ref: 'adress.yaml'
+    $ref: ./address.yaml
   price:
     type: number
     format: float
@@ -49,6 +49,6 @@ properties:
   images:
     type: array
     items:
-      $ref: 'objectImages.yaml'
+      $ref: ./objectImages.yaml
     minItems: 0
     maxItems: 200

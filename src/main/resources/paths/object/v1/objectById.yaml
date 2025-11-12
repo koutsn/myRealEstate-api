@@ -2,10 +2,17 @@
 get:
   summary: Get all Objects
   description: Get
-  operationId: getAllObjects
+  operationId: getObjectById
   tags:
     - Object
   security: [ ]
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: id of object to delete
+      schema:
+        type: string
   responses:
     '200':
       description: List of Objects
@@ -14,10 +21,38 @@ get:
           schema:
             type: array
             items:
-              $ref: ../../../schemas/v1/object.yaml"
+              $ref: ../../../schemas/object/v1/object.yaml
     '400':
       description: Bad request
       content:
         application/json:
           schema:
             $ref: ../../../schemas/error.yaml
+delete:
+  summary: Delete Object
+  description: Delete existing object by Id
+  operationId: deleteObject
+  tags:
+    - Object
+  security:
+    - bearerAuth: [ ]
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: id of object to delete
+      schema:
+        type: string
+  responses:
+    '204':
+      description: Object deleted successfully
+    '400':
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/error.yaml
+    '401':
+      description: Unauthorized
+    '403':
+      description: Forbidden
