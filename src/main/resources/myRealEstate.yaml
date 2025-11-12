@@ -20,6 +20,8 @@ paths:
     $ref: ./paths/user/v1/users.yaml
   /objects:
     $ref: ./paths/object/v1/objects.yaml
+  /object:
+    $ref: ./paths/object/v1/object.yaml
   /object/{id}:
     $ref: ./paths/object/v1/objectById.yaml
 components:

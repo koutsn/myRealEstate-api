@@ -20,31 +20,3 @@ get:
         application/json:
           schema:
             $ref: ../../../schemas/error.yaml
-post:
-  summary: Create a new Object
-  description: Create
-  operationId: createObject
-  tags:
-    - Object
-  security:
-    - bearerAuth: [ ]
-  requestBody:
-    description: Object to create
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: ../../../schemas/object/v1/object.yaml
-  responses:
-    '201':
-      description: Object created successfully
-    '400':
-      description: Bad request
-      content:
-        application/json:
-          schema:
-            $ref: ../../../schemas/error.yaml
-    '401':
-      description: Unauthorized
-    '403':
-      description: Forbidden
