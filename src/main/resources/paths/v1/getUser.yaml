@@ -2,6 +2,8 @@ get:
   summary: Get users by username
   description: Get all users by username
   operationId: getUser
+  tags:
+    - User
   security:
     - bearerAuth: [ ]
   parameters:

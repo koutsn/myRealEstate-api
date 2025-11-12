@@ -2,6 +2,8 @@ delete:
   summary: Delete user by username
   description: Delete existing user by username
   operationId: deleteUser
+  tags:
+    - User
   security:
     - bearerAuth: [ ]
   parameters:

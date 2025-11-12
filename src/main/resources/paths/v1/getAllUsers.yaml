@@ -2,6 +2,8 @@ get:
   summary: Get all users
   description: Get all users
   operationId: getAllUsers
+  tags:
+    - User
   security:
     - bearerAuth: [ ]
   responses:
