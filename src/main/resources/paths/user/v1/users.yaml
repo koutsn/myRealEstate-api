@@ -1,0 +1,27 @@
+get:
+  summary: Get all users
+  description: Get all users
+  operationId: getAllUsers
+  tags:
+    - User
+  security:
+    - bearerAuth: [ ]
+  responses:
+    '200':
+      description: List of users
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: ../../../schemas/user/v1/user.yaml
+    '400':
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/error.yaml
+    '401':
+      description: Unauthorized
+    '403':
+      description: Forbidden

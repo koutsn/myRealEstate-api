@@ -1,0 +1,24 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    example: 123e4567-e89b-12d3-a456-426614174000
+  street:
+    type: string
+    example: "123 Main St"
+    minLength: 1
+    maxLength: 100
+  zipCode:
+    type: string
+    example: "15319"
+  city:
+    type: string
+    example: "Anytown"
+    minLength: 1
+    maxLength: 50
+  country:
+    type: string
+    example: "GE"
+    minLength: 1
+    maxLength: 50

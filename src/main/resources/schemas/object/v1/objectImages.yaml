@@ -1,0 +1,16 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    example: 123e4567-e89b-12d3-a456-426614174000
+  description:
+    type: string
+    example: This is a sample object used for demonstration purposes.
+    maxLength: 500
+  images:
+      type: string
+      minItems: 1
+      maxItems: 100
+      format: uri
+      example: https://example.com/image1.jpg

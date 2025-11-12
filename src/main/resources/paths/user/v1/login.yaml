@@ -1,0 +1,34 @@
+post:
+  summary: Login and get a JWT token
+  description: Authenticate user and return a JWT token for subsequent requests.
+  operationId: loginUser
+  tags:
+    - User
+  security: [ ]
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../../schemas/user/v1/login.yaml
+  responses:
+    '200':
+      description: Login successful, returns JWT token
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              token:
+                type: string
+                example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+    '400':
+      description: Bad request
+      content:
+        application/json:
+            schema:
+              $ref: ../../../schemas/error.yaml
+    '401':
+      description: Unauthorized
+    '403':
+      description: Forbidden

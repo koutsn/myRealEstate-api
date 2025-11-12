@@ -1,0 +1,54 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+    example: 123e4567-e89b-12d3-a456-426614174000
+  description:
+    type: string
+    example: This is a sample object used for demonstration purposes.
+    maxLength: 500
+  address:
+    $ref: 'adress.yaml'
+  price:
+    type: number
+    format: float
+    example: 250000.00
+    minimum: 0
+  numberRooms:
+    type: integer
+    example: 5
+    minimum: 1
+    maximum: 100
+  numberBathrooms:
+    type: integer
+    example: 2
+    minimum: 1
+    maximum: 50
+  garageSize:
+    type: number
+    description: Size of the garage in square meters
+    example: 25.0
+    minimum: 0
+  status:
+      type: string
+      enum: [ "AVAILABLE", "SOLD", "PENDING" ]
+      example: AVAILABLE
+  createdAt:
+    type: string
+    format: date-time
+    example: 2024-01-01T12:00:00Z
+  updatedAt:
+    type: string
+    format: date-time
+    example: 2024-01-02T12:00:00Z
+  thumbnail:
+    type: string
+    format: uri
+    example: https://example.com/thumbnail.jpg
+  images:
+    type: array
+    items:
+      $ref: 'objectImages.yaml'
+    minItems: 0
+    maxItems: 200

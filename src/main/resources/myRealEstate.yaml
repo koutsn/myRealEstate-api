@@ -11,15 +11,17 @@ servers:
     description: Local server
 paths:
   /login:
-    $ref: ./paths/v1/login.yaml
+Yaml Structure    $ref: ./paths/user/v1/login.yaml
   /register:
-    $ref: ./paths/v1/register.yaml
+    $ref: ./paths/user/v1/register.yaml
   /delete{username}:
-    $ref: ./paths/v1/deleteUser.yaml
+    $ref: ./paths/user/v1/deleteUser.yaml
   /user/{username}:
-    $ref: ./paths/v1/getUser.yaml
+    $ref: ./paths/user/v1/userByUsername.yaml
   /users:
-    $ref: ./paths/v1/getAllUsers.yaml
+    $ref: ./paths/user/v1/users.yaml
+  /objects:
+    $ref: ./paths/object/v1/objects.yaml
 components:
   securitySchemes:
     bearerAuth:
