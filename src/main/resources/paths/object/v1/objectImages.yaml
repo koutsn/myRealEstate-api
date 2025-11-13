@@ -1,7 +1,7 @@
 post:
-  summary: Create a new Object
-  description: Create a new object with the provided details.
-  operationId: createObject
+  summary: Add images to object
+  description: asd images to object
+  operationId: createImage
   tags:
     - Object
   security:
@@ -12,10 +12,10 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../../schemas/object/v1/object.yaml
+          $ref: ../../../schemas/object/v1/objectImages.yaml
   responses:
     '201':
-      description: Object created successfully
+      description: Images added created successfully
     '400':
       description: Bad request
       content:

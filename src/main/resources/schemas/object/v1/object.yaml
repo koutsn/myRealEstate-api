@@ -1,4 +1,12 @@
 type: object
+required:
+  - id
+  - description
+  - address
+  - price
+  - numberRooms
+  - status
+  - createdAt
 properties:
   id:
     type: string
@@ -46,9 +54,3 @@ properties:
     type: string
     format: uri
     example: https://example.com/thumbnail.jpg
-  images:
-    type: array
-    items:
-      $ref: ./objectImages.yaml
-    minItems: 0
-    maxItems: 200
