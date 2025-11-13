@@ -13,3 +13,4 @@ properties:
   images:
       type: string
       format: binary
+      example: iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR42mL8//8/AyWAXiBgYGBg+
