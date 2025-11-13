@@ -35,7 +35,7 @@ properties:
     maxLength: 100
   role:
     type: string
-    enum: [ "USER", "MANAGER", "ADMIN" ]
+    enum: [ "USER", "ADMIN" ]
     example: USER
   status:
     type: string
