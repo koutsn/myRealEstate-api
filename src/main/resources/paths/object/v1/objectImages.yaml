@@ -7,7 +7,7 @@ post:
   security:
     - bearerAuth: [ ]
   requestBody:
-    description: Object to create
+    description: Images for object
     required: true
     content:
       application/json:
