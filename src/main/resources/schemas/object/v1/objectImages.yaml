@@ -1,4 +1,6 @@
 type: object
+minItems: 0
+maxItems: 20
 properties:
   id:
     type: string
@@ -7,10 +9,7 @@ properties:
   description:
     type: string
     example: This is a sample object used for demonstration purposes.
-    maxLength: 500
+    maxLength: 200
   images:
       type: string
-      minItems: 1
-      maxItems: 100
-      format: uri
-      example: https://example.com/image1.jpg
+      format: binary

@@ -12,7 +12,9 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../../schemas/object/v1/objectImages.yaml
+          type: array
+          items:
+            $ref: ../../../schemas/object/v1/objectImages.yaml
   responses:
     '201':
       description: Images added created successfully
