@@ -6,6 +6,13 @@ post:
     - Object
   security:
     - bearerAuth: [ ]
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: id of object to delete
+      schema:
+        type: string
   requestBody:
     description: Images of object
     required: true
