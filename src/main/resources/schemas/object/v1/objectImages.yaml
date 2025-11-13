@@ -1,16 +1,8 @@
 type: object
-minItems: 0
-maxItems: 20
 properties:
-  id:
-    type: string
-    format: uuid
-    example: 123e4567-e89b-12d3-a456-426614174000
-  description:
-    type: string
-    example: This is a sample object used for demonstration purposes.
-    maxLength: 200
   images:
-      type: string
-      format: binary
-      example: iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR42mL8//8/AyWAXiBgYGBg+
+      type: array
+      minItems: 0
+      maxItems: 20
+      items:
+        $ref: ./images.yaml
