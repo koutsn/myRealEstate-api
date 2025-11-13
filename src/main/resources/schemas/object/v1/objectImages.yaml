@@ -1,5 +1,9 @@
 type: object
 properties:
+  objectId:
+    type: string
+    format: uuid
+    description: Unique identifier of the object
   images:
       type: array
       minItems: 0

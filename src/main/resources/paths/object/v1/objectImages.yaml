@@ -6,13 +6,6 @@ post:
     - Object
   security:
     - bearerAuth: [ ]
-  parameters:
-    - name: id
-      in: path
-      required: true
-      description: id of object
-      schema:
-        type: string
   requestBody:
     description: Images of object
     required: true

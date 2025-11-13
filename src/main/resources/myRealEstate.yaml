@@ -24,7 +24,7 @@ paths:
     $ref: ./paths/object/v1/object.yaml
   /object/{id}:
     $ref: ./paths/object/v1/objectById.yaml
-  /object/id/images:
+  /object/images:
     $ref: ./paths/object/v1/objectImages.yaml
 components:
   securitySchemes:
