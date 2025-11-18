@@ -17,11 +17,9 @@ post:
     description: Images of object
     required: true
     content:
-      application/json:
+      multipart/form-data:
         schema:
-          type: array
-          items:
-            $ref: ../../../schemas/object/v1/objectImages.yaml
+          $ref: ../../../schemas/object/v1/objectImages.yaml
   responses:
     '201':
       description: Images added created successfully

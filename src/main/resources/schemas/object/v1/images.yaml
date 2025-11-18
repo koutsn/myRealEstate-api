@@ -1,0 +1,31 @@
+type: object
+required:
+  - id
+  - name
+  - image
+summary: Schema for image URLs
+description: This schema defines the structure for storing image
+properties:
+  id:
+    type: string
+    format: uuid
+    description: The unique identifier for the image
+    example: "123e4567-e89b-12d3-a456-426614174000"
+    readOnly: true
+  url:
+    type: string
+    format: uri
+    description: The URL of the image
+    example: "https://example.com/images/sample-image.jpg"
+    readOnly: true
+  name:
+    type: string
+    description: The name of the image
+    example: "Sample Image"
+  image:
+    type: string
+    format: binary
+    example: iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR42mL8//8/AyWAXiBgYGBg+
+    writeOnly: true
+
+

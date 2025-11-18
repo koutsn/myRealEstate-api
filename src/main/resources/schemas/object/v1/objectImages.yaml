@@ -1,17 +1,6 @@
 type: object
 properties:
-  names:
-    type: array
-    minItems: 0
-    maxItems: 50
-    items:
-        type: string
-        example: "A sample image upload"
-  images:
+    images:
       type: array
-      minItems: 0
-      maxItems: 50
       items:
-        type: string
-        format: binary
-        example: iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABGklEQVR42mL8//8/AyWAXiBgYGBg+
+        $ref: ./images.yaml
