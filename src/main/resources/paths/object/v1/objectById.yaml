@@ -1,7 +1,7 @@
 
 get:
-  summary: Get all Objects
-  description: Get
+  summary: Get object by id
+  description: Get object by id
   operationId: getObjectById
   tags:
     - Object
@@ -10,7 +10,7 @@ get:
     - name: id
       in: path
       required: true
-      description: id of object to delete
+      description: id of object to get
       schema:
         type: string
   responses:
@@ -19,9 +19,7 @@ get:
       content:
         application/json:
           schema:
-            type: array
-            items:
-              $ref: ../../../schemas/object/v1/object.yaml
+            $ref: ../../../schemas/object/v1/object.yaml
     '400':
       description: Bad request
       content:

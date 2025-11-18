@@ -1,0 +1,27 @@
+get:
+  summary: Image of Object per Id
+  description: Image of Object per Id
+  operationId: getObjectImageById
+  tags:
+    - Object
+  security: [ ]
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: id of object to delete
+      schema:
+        type: string
+  responses:
+    '201':
+      description: Return image
+
+    '400':
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/error.yaml
+            content:
+              application/json:
+                $ref: ../../../schemas/object/v1/image.yaml
