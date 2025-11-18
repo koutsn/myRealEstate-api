@@ -26,6 +26,8 @@ paths:
     $ref: ./paths/object/v1/objectById.yaml
   /object/{id}/images:
     $ref: ./paths/object/v1/objectImages.yaml
+  /object/{id}/images/{imageid}:
+    $ref: ./paths/object/v1/objectImageById.yaml
 components:
   securitySchemes:
     bearerAuth:

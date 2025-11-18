@@ -12,9 +12,19 @@ get:
       description: id of object to delete
       schema:
         type: string
+    - name: imageid
+      in: path
+      required: true
+      description: id of object to delete
+      schema:
+        type: string
   responses:
-    '201':
+    '200':
       description: Return image
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/object/v1/images.yaml
 
     '400':
       description: Bad request
@@ -22,6 +32,3 @@ get:
         application/json:
           schema:
             $ref: ../../../schemas/error.yaml
-            content:
-              application/json:
-                $ref: ../../../schemas/object/v1/image.yaml
