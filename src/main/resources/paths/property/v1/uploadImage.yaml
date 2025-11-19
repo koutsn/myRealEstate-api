@@ -1,0 +1,46 @@
+post:
+  summary: Upload image
+  description: Upload image for a property
+  operationId: uploadFile
+  tags:
+    - Object
+  security:
+    - bearerAuth: [ ]
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: id of object
+      schema:
+        type: string
+  requestBody:
+    required: true
+    content:
+      multipart/form-data:
+        schema:
+          $ref: ../../../schemas/property/v1/binaryImage.yaml
+  responses:
+    '200':
+      description: Upload successful
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              fileUrls:
+                type: array
+                items:
+                  type: string
+                  format: uri
+    '400':
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/error.yaml
+    '401':
+      description: Unauthorized
+    '403':
+      description: Forbidden
