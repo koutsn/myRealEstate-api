@@ -1,0 +1,10 @@
+type: object
+description: Upload image (multipart/form-data)
+properties:
+  file:
+    type: string
+    format: binary
+    description: The image file to upload
+  description:
+    type: string
+    description: Optional image description

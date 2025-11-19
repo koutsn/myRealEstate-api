@@ -1,4 +1,3 @@
-
 get:
   summary: Get object by id
   description: Get object by id
@@ -10,7 +9,7 @@ get:
     - name: id
       in: path
       required: true
-      description: id of object to get
+      description: id of object
       schema:
         type: string
   responses:
