@@ -19,7 +19,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../../schemas/object/v1/object.yaml
+            $ref: ../../../schemas/property/v1/property.yaml
     '400':
       description: Bad request
       content:

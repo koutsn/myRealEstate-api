@@ -1,4 +1,4 @@
-openapi: 3.1.1
+openapi: 3.0.3
 info:
   title: REal Estate API
   description: API for the real estate Service
@@ -19,15 +19,11 @@ paths:
   /users:
     $ref: ./paths/user/v1/users.yaml
   /objects:
-    $ref: ./paths/object/v1/objects.yaml
+    $ref: ./paths/property/v1/properties.yaml
   /object:
-    $ref: ./paths/object/v1/object.yaml
+    $ref: ./paths/property/v1/property.yaml
   /object/{id}:
-    $ref: ./paths/object/v1/objectById.yaml
-  /object/{id}/images:
-    $ref: ./paths/object/v1/objectImages.yaml
-  /object/{id}/images/{imageid}:
-    $ref: ./paths/object/v1/objectImageById.yaml
+    $ref: ./paths/property/v1/propertyById.yaml
 components:
   securitySchemes:
     bearerAuth:

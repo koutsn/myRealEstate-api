@@ -17,7 +17,7 @@ properties:
     example: This is a sample object used for demonstration purposes.
     maxLength: 500
   address:
-    $ref: ./address.yaml
+    $ref: ../../address/address.yaml
   price:
     type: number
     format: float

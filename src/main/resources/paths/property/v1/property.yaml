@@ -12,7 +12,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../../../schemas/object/v1/object.yaml
+          $ref: ../../../schemas/property/v1/property.yaml
   responses:
     '201':
       description: Object created successfully
