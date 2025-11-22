@@ -26,6 +26,10 @@ paths:
     $ref: ./paths/property/v1/propertyById.yaml
   /object/{id}/image/upload:
     $ref: ./paths/property/v1/uploadImage.yaml
+  /object/{id}/images:
+    $ref: ./paths/property/v1/propertyImages.yaml
+  /image/{id}:
+    $ref: ./paths/property/v1/image.yaml
 components:
   securitySchemes:
     bearerAuth:

@@ -7,4 +7,4 @@ properties:
     description: The image file to upload
   description:
     type: string
-    description: Optional image description
+    description: image description

@@ -1,0 +1,27 @@
+get:
+  summary: Get image by Id
+  description: Get image by Id
+  operationId: getImage
+  tags:
+    - Object
+  security: [ ]
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: id of object
+      schema:
+        type: string
+  responses:
+    '200':
+      description: List of object images
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/property/v1/image.yaml
+    '400':
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: ../../../schemas/error.yaml
