@@ -33,6 +33,10 @@ properties:
     example: 2
     minimum: 1
     maximum: 50
+  hasGarage:
+    type: boolean
+    description: Does the object has a garage ?
+    example: true
   garageSize:
     type: number
     description: Size of the garage in square meters
