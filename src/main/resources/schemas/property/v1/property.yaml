@@ -54,7 +54,7 @@ properties:
     type: string
     format: date-time
     example: 2024-01-02T12:00:00Z
-  thumbnail:
+  thumbnailUrl:
     type: string
     format: uri
     example: https://example.com/thumbnail.jpg
