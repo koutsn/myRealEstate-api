@@ -31,7 +31,8 @@ delete:
   operationId: deleteObject
   tags:
     - Object
-  security: [ ]
+  security:
+    - bearerAuth: [ ]
   parameters:
     - name: id
       in: path
