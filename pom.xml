@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
         <openapi-generator.version>7.0.1</openapi-generator.version>
+        <gitlab.projectId>4</gitlab.projectId>
     </properties>
 
     <dependencies>
@@ -74,4 +75,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>gitlab-maven</id>
+            <name>GitLab Maven Registry</name>
+            <url>http://localhost:8929/api/v4/projects/${gitlab.projectId}/packages/maven</url>
+        </repository>
+    </distributionManagement>
 </project>
